@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700;900&display=swap");
+:root {
+  --violet: hsl(273, 75%, 66%);
+  --blue: hsl(240, 73%, 65%);
+  --dark-blue: hsl(238, 29%, 16%);
+  --hover-red: hsl(14, 88%, 65%);
+  --divider: hsl(240, 5%, 91%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+  font-size: 16px;
+  background: linear-gradient(to bottom, var(--violet), var(--blue));
+  min-height: 100vh;
+  font-family: "Kumbh", sans-serif;
+  color: var(--dark-blue);
+}
+
+.container {
+  width: 750px;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 10px 15px 10px 20px rgba(37, 43, 70, 0.1);
+  height: 450px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.left {
+  width: 350px;
+  display: flex;
+  align-items: center;
+  margin: -20px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--dark-blue);
+  padding: 40px;
+  /* background-color: var(--divider); */
+}
+
+.img {
+  width: 100%;
+}
+.heading-title {
+  color: var(--dark-blue);
+  margin-left: -240px;
+}
+
+li {
+  list-style-type: none;
+  margin-top: 10px;
+  border-bottom: 1px solid var(--dark-blue);
+  margin-bottom: 5px;
+  font-size: 11px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+.reveal-answer {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: red; */
+}
+
+.arrow {
+  width: 10px;
+  height: 6px;
+  color: var(--violet);
+}
+.arrow-rotate {
+  width: 10px;
+  height: 6px;
+  transform: rotate(180deg);
+}
+
+.question {
+  font-weight: 900;
+}
+.red-title {
+  color: rgb(204, 13, 13);
+}
+
+.answer {
+  font-weight: 400;
+  font-size: 8px;
+  margin-top: 10px;
+}
+
+/* ///////////////media query //////////// */
+
+@media screen and (max-width: 375px) {
+  .container {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 350px;
+  }
+  .left,
+  .right {
+    align-items: center;
+  }
+
+  .left {
+    width: 150px;
+    text-align: center;
+    margin-top: -30px;
+    margin-left: 100px;
+  }
+  .right {
+    padding: 20px;
+  }
+}
