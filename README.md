@@ -1,3 +1,4 @@
+![WhatsApp Image 2023-11-28 at 12 53 35 AM](https://github.com/FranklinKED/faq/assets/71602470/d8aeda9b-67eb-4950-bb98-aea8611a4cf3)
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
